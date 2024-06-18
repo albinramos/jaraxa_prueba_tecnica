@@ -1,0 +1,80 @@
+.tabs-container .MuiTabs-flexContainer {
+  justify-content: center;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100%;
+}
+
+.details-container-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.details-title-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.details-title{
+  font-size: 2.5rem;
+  overflow-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  padding-top: 2rem;
+  font-weight: 100;
+}
+
+.medicinal-title{
+  font-size: 2rem;
+  overflow-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.medicinal-product{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  padding-bottom: 3rem;
+  width: 80%;
+  color: #1876D1;
+  overflow-wrap: break-word;
+}
+
+.MuiTab-root{
+  max-width: 100% !important;
+}
+
+.loader-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dna-loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
