@@ -6,7 +6,7 @@ import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import { useMediaQuery } from '@mui/material';
 import { DNA } from 'react-loader-spinner' 
-import Nabvar from '../navbar/Nabvar';
+import Navbar from '../navbar/Navbar';
 import ScrollTop from '../scrollTop/ScrollTop';
 
 function ProductDetails() {
@@ -80,7 +80,7 @@ function ProductDetails() {
 
   return (
     <>
-    <Nabvar />
+    <Navbar />
     <div className='details-container-main'>
       <h1 className='details-title'>PRODUCT DETAILS:</h1>
       {showNoDetailsAlert && (

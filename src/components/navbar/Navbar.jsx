@@ -2,7 +2,7 @@ import React from 'react'
 import './navbar.css'
 import { Link } from 'react-router-dom'
 
-function Nabvar() {
+function Navbar() {
   return (
     <>
       <nav className="navbar">
@@ -14,4 +14,4 @@ function Nabvar() {
   )
 }
 
-export default Nabvar
+export default Navbar

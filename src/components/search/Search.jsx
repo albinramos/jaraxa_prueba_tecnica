@@ -3,7 +3,7 @@ import './search.css';
 import { IoSearchSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
-import Nabvar from '../navbar/Nabvar';
+import Navbar from '../navbar/Navbar';
 import ScrollTop from '../scrollTop/ScrollTop';
 
 const Search = () => {
@@ -48,7 +48,7 @@ const Search = () => {
 
   return (
     <>
-      <Nabvar />
+      <Navbar />
       <div className='search-container'>
         <h1 className='title-search'>SEARCH BY MEDICINAL PRODUCT</h1>
         <div className="search">
