@@ -125,6 +125,7 @@
   display: flex;
   text-align: left;
   margin-top: 0.5rem;
+  color: #4E4E4E;
 }
 
 .details-results:first-child {

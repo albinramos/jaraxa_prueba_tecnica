@@ -51,7 +51,7 @@ function ProductDetails() {
     fetchProductDetails();
   }, [productId]);
 
-  function a11yProps(index) {
+  function generateTabProps(index) {
     return {
       id: `simple-tab-${index}`,
       'aria-controls': `simple-tabpanel-${index}`,
@@ -94,7 +94,12 @@ function ProductDetails() {
             <h2 className='medicinal-title'>Medicinal Product</h2>
             <p className='medicinal-product'>{productDetails.medicinalproduct}</p>
           </div>
-          <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+          <Box 
+            sx={{ 
+              borderBottom: 1, 
+              borderColor: 'divider' 
+            }}
+          >
             <Tabs 
               value={value} 
               onChange={handleChange} 
@@ -102,15 +107,15 @@ function ProductDetails() {
               className='tabs-container'
               orientation={matches ? 'horizontal' : 'vertical'}
             >
-              <Tab label="Product Type" {...a11yProps(0)} className='tabs-details'/>
-              <Tab label="Generic Name" {...a11yProps(1)} className='tabs-details'/>
-              <Tab label="Brand Name" {...a11yProps(2)} className='tabs-details'/>
-              <Tab label="Manufacturers" {...a11yProps(3)} className='tabs-details'/>
-              <Tab label="EPC Class" {...a11yProps(4)} className='tabs-details'/>
-              <Tab label="Route" {...a11yProps(5)} className='tabs-details'/>
-              <Tab label="Pharm Class PE" {...a11yProps(6)} className='tabs-details'/>
-              <Tab label="Identifier" {...a11yProps(7)} className='tabs-details'/>
-              <Tab label="Pharm Class EPC" {...a11yProps(8)} className='tabs-details'/>
+              <Tab label="Product Type" {...generateTabProps(0)} className='tabs-details'/>
+              <Tab label="Generic Name" {...generateTabProps(1)} className='tabs-details'/>
+              <Tab label="Brand Name" {...generateTabProps(2)} className='tabs-details'/>
+              <Tab label="Manufacturers" {...generateTabProps(3)} className='tabs-details'/>
+              <Tab label="EPC Class" {...generateTabProps(4)} className='tabs-details'/>
+              <Tab label="Route" {...generateTabProps(5)} className='tabs-details'/>
+              <Tab label="Pharm Class PE" {...generateTabProps(6)} className='tabs-details'/>
+              <Tab label="Identifier" {...generateTabProps(7)} className='tabs-details'/>
+              <Tab label="Pharm Class EPC" {...generateTabProps(8)} className='tabs-details'/>
             </Tabs>
           </Box>
           <CustomTabPanel value={value} index={0}>

@@ -1,4 +1,4 @@
-# Nombre del Proyecto
+# JARAXA PRUEBA TÉCNICA
 
 Proyecto para prueba técnica de un buscador de medicamentos mediante la API [OpenFDA](https://open.fda.gov/apis/) y ver todas las características de los mismos.
 
