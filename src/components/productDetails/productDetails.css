@@ -33,7 +33,7 @@
   margin: auto;
   width: 90%;
   padding-top: 2rem;
-  font-weight: 100;
+  font-family: 'Playfair Display', serif;
 }
 
 .medicinal-title{
@@ -46,7 +46,7 @@
   width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
 }
 
@@ -57,12 +57,26 @@
   font-size: 3rem;
   padding-bottom: 3rem;
   width: 80%;
-  color: #1876D1;
+  color: #027DBB;
   overflow-wrap: break-word;
+  font-family: 'Playfair Display', serif;
 }
 
 .MuiTab-root{
   max-width: 100% !important;
+}
+
+.Mui-selected{
+  color: #027DBB !important;
+}
+
+.MuiButton-root{
+  height:3rem;
+  width: 14%;
+}
+
+.MuiButton-root svg{
+  font-size: 5rem;
 }
 
 .loader-container{
@@ -77,4 +91,94 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.details-back {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2%;
+  cursor: pointer;
+  width: 2rem;
+}
+
+.details-back-link{
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+  background-color: #027DBB;
+  padding: 1rem;
+  color: white;
+  font-size: 0.5rem;
+}
+
+.details-back-link:hover {
+  color: #027DBB;
+  background-color: white;
+  border: 2px solid #027DBB;
+}
+
+.details-results{
+  font-size: 1rem;
+  display: flex;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+.details-results:first-child {
+  padding-top: 3rem; 
+}
+
+.details-results:last-child {
+  padding-bottom: 8rem; 
+}
+
+.details-transition {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.details-visible {
+  opacity: 1;
+}
+
+.alert{
+  color: red;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.no-data-text{
+  color: red;
+  font-size: 1rem;
+  padding-top: 3rem;
+}
+
+@media screen and (min-width:768px){
+  .details-back {
+    width: 15rem;
+  }
+
+  .details-back-link{
+    font-size: 1rem;
+  }
+
+  .MuiButton-root{
+    height:4rem;
+    width: 20%;
+  }
+
+  .MuiButton-root svg{
+    font-size: 3rem;
+  }
+
+  .details-results{
+    font-size: 1.2rem;
+  }
+
+  .no-data-text{
+    font-size: 1.5rem;
+  }
 }
